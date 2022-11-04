@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSEEC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.inseec.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://www.heip.fr/integration_welcome/css/style_welcome.css" />
+    <script src="https://www.heip.fr/integration_welcome/test/assets/js/form.js"></script>
+    <style>
+      section.formulaire_welcome .block {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+
+      section.formulaire_welcome {
+        color: #777777;
+      }
+
+      section.formulaire_welcome .block input,
+      section.formulaire_welcome .block select {
+        border-bottom: solid 1px #777777;
+      }
+      section.formulaire_welcome h3,
+      section.formulaire_welcome h2,
+      section.formulaire_welcome p strong,
+      section.formulaire_welcome .cta:hover,
+      section.formulaire_welcome p a {
+        color: #f89b1c;
+      }
+
+      section.formulaire_welcome .cta {
+        background-color: #f89b1c;
+        border: solid 2px #f89b1c;
+      }
+
+      section.formulaire_welcome .block input[type=submit] {
+        background-color: #f89b1c;
+      }
+      section.formulaire_welcome .block input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin: 0 3px 0 0;
+      }
+
+      select:required {
+        box-shadow:none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="formulaire_welcome">
+      <form method="post" id="welcome_form">
+        <input type="hidden" name="url_ws" value="https://www.heip.fr/inseecu/fr/api/form/demande-documentation" />
+
+        <div class="block full">
+          <input type="submit" name="sumbit" value="Envoyer" />
+        </div>
+      </form>
+    </section>
+  </body>
+
+</html>
